@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui" />
+
+    <title>Bion Hart Johnson</title>
+
+    <link rel="icon" href="data:image/x-icon; base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAD///////////////////////////39/f/8/fz//P39//3+/v/9/v3//v7+/////////////////////////////////////////////v7+//7+/v////////////////////////////7+/v/9/v3///////////////////////////////////////7+/v//////qMa0/4SikP/G08z/6u3r/8TZzP/b6eD///////7+/v///////////////////////f7+///////N3dT/dJSB/zBZP/8aQyr/HT8q/yRXOP8VTCr/T31h/7fPwf/y9/T///////7///////////////39/f//////ts/B/yZYOf8UNSD/FEIk/w85Hv8IMBf/Fzkj/0p3XP+60sX////////////////////////////+//7///////P59v99nor/Ci8X/w8tGf8QNR3/Fjoj/xlDKf9tmX//zt7V//////////7////////////////////////+/v//////oL2s/y5SO/8LMRj/EDkf/wsuGP8TOCD/iaiW//b6+P///////v/+///////////////////////+/v7//////93p4v9Yf2f/DjEa/wslFP8HLxX/Ml1C/8TXzP///////v7+/////////////////////////////v7+///////x9/P/aox3/xQ2H/8LLRf/G0Uq/2uMd//Y5d3///////3+/v////////////////////////////7+/v//////9fr3/2WKdP8YPib/FDoi/w8zHP9BbFL/7/by///////+/v7//////////////////////////////////v7+//////+Yt6T/LVg9/xk6Jf8WOyP/m7in///////+/v7///////////////////////////////////////7/////////8vf0/2GJcP8rUzv/WXtn/9Ti2v///////f79/////////////////////////////////////////////f79//////+lva//I081/1B5YP/w9/T///////7///////////////////////////////////////////////39/f//////zd3U/ytYPf+GppT///////7+/v/////////////////////////////////////////////////+/v7//////+bv6f9hjnT/rMa3///////9/v3///////////////////////////////////////////////////////7//v//////3u7m//L49f//////////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" type="image/x-icon">
+
+    <style>
+     body, html {
+       padding-top: 2.5em;
+       margin: 0;
+       background-color: #fafafa;
+     }
+
+     header {
+       width: 100%;
+       vertical-align: middle;
+       text-align: center;
+     }
+
+     .header-content {
+       display: inline-block;
+     }
+
+     .header-text {
+       margin-top: 0.5em;
+       margin-left: 1em;
+     }
+
+     header p {
+       text-align: center;
+       font-family: "Merriweather";
+       margin: 0;
+       color: #212121;
+       font-size: 1.2em;
+     }
+
+     .first-name {
+       font-size: 1.05em;
+     }
+
+     .subtitle {
+       font-family: "Merriweather";
+       padding-top: 0.3em;
+       font-size: 0.8em;
+       font-weight: 500;
+       color: #424242;
+     }
+
+     .paper {
+       margin: 0 auto;
+       margin-bottom: 1em;
+       background-color: white;
+       width: 60%;
+       padding: 0.5em 0 0.5em 0;
+       border-top: 1px solid #e0e0e0;
+       border-left: 1px solid #e0e0e0;
+       border-right: 1px solid #e0e0e0;
+       border-bottom: 3px solid #e0e0e0;
+       border-radius: 3px;
+     }
+
+     @media(max-width:992px) {
+       .paper {
+         width: 80%;
+       }
+     }
+
+     .content-wrapper {
+       padding-right: 7.25%;
+     }
+
+     .content {
+       display: table;
+       width: 100%;
+       padding-top: 1.5em;
+     }
+
+     .content:last-child {
+       margin-bottom: 2em;
+     }
+
+     body > div > article > div > section:last-child {
+       padding-bottom: 1.5em;
+     }
+
+     .row {
+       display: table-row;
+     }
+     .row div {
+       display: table-cell;
+     }
+
+     .content-cat {
+       font-family: "Merriweather";
+       font-variant: small-caps;
+       font-weight: 300;
+       letter-spacing: 1px;
+       color: #212121;
+       font-size: 0.975em;
+       text-align: center;
+       vertical-align: middle;
+       padding-left: 6.66%;
+       width: 30%;
+     }
+
+     .content-cat p {
+       font-size: 0.55em;
+       font-weight: 600;
+       margin-bottom: 0;
+     }
+
+     .content-text {
+       border-left: 1px solid #e0e0e0;
+       transition: border 0.66s ease-in;
+     }
+
+     .big-text {
+       vertical-align: top;
+     }
+
+     .content-text ul {
+       padding: 0;
+       margin: 0;
+       margin-top: 0.15em;
+       width: 85%;
+       margin-left: 1.5em;
+     }
+
+     .content-text ul:last-child {
+       margin-bottom: 0.5em;
+     }
+
+     .language-section-content {
+       border-left: 1px solid #e0e0e0;
+     }
+
+     .language-list-header {
+       font-family: "Open Sans";
+       font-size: 0.75em;
+       display: block;
+       font-weight: 600;
+       margin: 0;
+     }
+
+     .content .row .language-block {
+       margin-left: 1.5em;
+       display: inline-grid;
+     }
+
+     .content .row .language-block:last-child {
+       margin-left: 5em;
+       display: inline-grid;
+     }
+
+     .language-list {
+       margin-top: 0.5em;
+       padding: 0;
+     }
+
+     .language-list li {
+       font-family: "Open Sans";
+       font-size: 0.7em;
+       display: block;
+       margin-bottom: 0.2em;
+     }
+
+     .contact-content {
+       border-left: 1px solid #e0e0e0;
+     }
+
+     .contact-content p {
+       font-family: "Open Sans";
+       font-size: 0.75em;
+       display: block;
+       margin: 0;
+       margin-bottom: 0.2em;
+       margin-left: 1.5em;
+       padding: 0;
+     }
+
+     .content-text ul li {
+       font-family: "Open Sans";
+       font-size: 0.7em;
+       display: inline-block;
+     }
+
+     .content-text ul li:first-child {
+       width: 35%;
+       color: #424242;
+       font-weight: 600;
+     }
+
+     .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a, .skills-listing a, .highlight a, .education-listing a {
+       text-decoration: none;
+       color: #0277bd;
+     }
+
+     .content-text ul li a:hover {
+       color:#4fc3f7;
+     }
+
+     .work-listing p {
+       font-family: "Open Sans";
+       font-size: 0.7em;
+       color: #424242;
+       margin-left: 2em;
+       margin-top: 0.45em;
+       margin-bottom: 0.45em;
+     }
+
+     div.content-text.work-listing.education-listing > p:nth-child(2) {
+       margin-top:0.25em;
+     }
+
+     .work-listing .highlight {
+       font-family: "Open Sans";
+       font-size: 0.7em;
+       font-weight: 400;
+       color: #424242;
+       margin-left: 3.25em;
+       padding-left: 0.5em;
+       border-left: 1px solid #e0e0e0;
+
+     }
+
+     .education-listing > .heading {
+       font-weight: 600;
+       margin-top: 0.75em;
+       margin-left: 2em;
+     }
+
+     .education-listing > .highlight {
+       margin-left: 3.25em;
+     }
+
+     .highlight {
+       transition: border .33s ease-in;
+     }
+
+     .profiles-listing ul li, .profiles-listing ul li:first-child {
+       width: 32%;
+       font-weight: normal;
+     }
+
+     .work-content, .education-content {
+       padding-top: .75em;
+     }
+
+     section.content.education-content > div > div.content-cat {
+       vertical-align: top;
+     }
+
+     div.content-text.skills-listing > p {
+       font-family: "Open Sans";
+       font-size: 0.7em;
+       font-weight: 400;
+       margin-left: 2em;
+       margin-top: 0.45em;
+       margin-bottom: 0.45em;
+     }
+
+     div.content-text.skills-listing > p > {
+       color: #212121;
+     }
+    </style>
+
+    <style media="print">
+     body, html {
+       background-color: white;
+       padding-top: 1.5em;
+     }
+
+     .paper {
+       width: 100%;
+       border: 0;
+       padding-top: 0;
+     }
+
+     .profiles {
+       display: none;
+     }
+
+     .content {
+       page-break-inside: avoid;
+       page-break-after: auto;
+     }
+
+     .header-text {
+       float: left;
+       margin-top: -1.6em;
+     }
+
+     .content-wrapper > .content:first-child {
+       padding-top: 2em;
+     }
+
+     .content:last-child {
+       padding-bottom: 0;
+     }
+
+     .content-cat {
+       width: 33%;
+       color: black;
+       text-align: left;
+     }
+
+     .content-cat p {
+       font-size: 0.6em;
+       font-weight: 600;
+     }
+
+     header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+       color: black;
+     }
+
+     .content-text.skills-listing > ul > li span, .subtitle {
+       color: #212121;
+     }
+
+     .content-text ul:last-child {
+       margin-bottom: 0.25em;
+     }
+
+     .content-text ul li:first-child {
+       width: 50%;
+     }
+
+     .profiles-listing ul li:first-child {
+       width: 32%;
+     }
+
+     div.content-text.skills-listing > ul > li {
+       width: 33%;
+     }
+
+     .work-listing p {
+       margin-bottom: 0.1em;
+     }
+
+     div.content-text.skills-listing > ul > li > p {
+       margin-top: 0.4em;
+       margin-bottom: 0.5em;
+     }
+
+     div.content-text.skills-listing > ul > li {
+       padding-left: 1.5em;
+     }
+
+     div.content-text.skills-listing > ul > li:first-child {
+       padding-left: 2em;
+     }
+
+     .content-text:hover {
+       border-left: 1px solid #eeeeee;
+     }
+
+     .content-text ul li a:hover {
+       color: #4fc3f7;
+     }
+
+     .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+       border-left: 1px solid #eeeeee;
+     }
+
+     .big-text {
+       padding-top: 0;
+     }
+    </style>
+  </head>
+
+  <body>
+    <div class="resume-wrapper">
+      <article class="paper">
+        <header>
+          <div class="header-content">
+            <div class="header-text">
+              <p> Bion Hart Johnson </p>
+              <p class="subtitle">Software Engineer</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="content-wrapper">
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Contact
+              </div>
+
+              <div class="contact-content">
+                <p>+1 (206) 403-3556</p>
+                <p><a href="mailto:bionjohnson@gmail.com">bionjohnson@gmail.com</a></p>
+                <br />
+                <p>1820 S Weller St</p>
+                <p>Seattle, WA 98144</p>
+                <br />
+                <p><a href="https://github.com/bion" target="_blank">github.com/bion</a></p>
+                <p><a href="https://www.linkedin.com/in/bionjohnson/" target="_blank">linkedin.com/in/bionjohnson</a></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Languages
+              </div>
+
+              <div class="language-section-content">
+                <div class="language-block">
+                  <h3 class="language-list-header">
+                    Proficient
+                  </h3>
+
+                  <ul class="language-list">
+                    <li>Java</li>
+                    <li>Ruby</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>SuperCollider</li>
+                    <li>Mandarin Chinese</li>
+                  </ul>
+                </div>
+
+                <div class="language-block">
+                  <h3 class="language-list-header">
+                    Capable
+                  </h3>
+
+                  <ul class="language-list">
+                    <li>C</li>
+                    <li>Go</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Clojure</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Skills
+              </div>
+
+              <div class="content-text skills-listing">
+                <p>In addition to web and native application development, my work experience includes search indexing, databases, distributed systems, real-time systems, audio synthesis and processing, linux server administration and automation, large-scale data processing pipelines, user experience design, user research, user testing, project management, and team leadership.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                Work Experience
+                <p>December 2018 &mdash; present</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p style="margin-top:2.2em;"> <strong>Software Engineer</strong> at <strong><a href="http://www.google.com/" target="_blank">Google</a></strong> </p>
+
+                <p>
+                  Working on a distributed workflow engine that supports a custom workflow definition language, search, real-time user-to-user interaction, and API integration.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>October 2017 &mdash; November 2018</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>Senior Software Engineer</strong> at <strong><a href="http://www.boundless.com/" target="_blank">Boundless Immigration</a></strong> </p>
+                <p>
+                  Lead operations engineer reporting to the CTO at a seed-stage legal services startup. Responsible for identifying, prioritizing, and executing on all product-related operational improvements across the business. This required me to coordinate our principal designer, operations team, attorneys, and executives, among others.
+                  <br><br>
+                  The technical foundation I helped establish contributed to Boundless' early success leading to <a href="https://www.geekwire.com/2019/seattle-startup-boundless-raises-7-8m-become-one-stop-shop-legal-immigration/" target="_blank">a series-A funding round</a>.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>July 2017 &mdash; October 2017</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>Lead Software Developer</strong> at <strong><a href="http://www.substantial.com/" target="_blank">Substantial</a></strong> </p>
+
+                <p>Technical lead on a consulting team bootstrapping a new product for T-Mobile.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>July 2015 &mdash; July 2017</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>Senior Software Developer</strong> at <strong><a href="http://www.citizencode.io/" target="_blank">Citizen Code</a></strong> </p>
+
+                <p>Member of a four-person software consultancy specializing in greenfield projects. In addition to software development my responsibilities included client communication, project management, leading technical teams, hiring sub-contractors, service design, product research, user testing, and advising product strategy.</p>
+
+                <p> Selected clients: <a target="_blank" href="https://www.deloitte.com">Deloitte</a>, <a target="_blank" href="https://www.codeforamerica.org/">Code for America</a>, <a target="_blank" href="http://depts.washington.edu/coasst/what/vision.html">University of Washington COASST</a>, <a target="_blank" href="https://www.micasense.com/">MicaSense</a> </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>October 2013 &mdash; July 2015</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>Software Developer</strong> at <strong><a href="http://www.substantial.com/" target="_blank">Substantial</a></strong> </p>
+
+                <p>Worked on a team building a componentized, real-time visual collaboration platform using C, Node.js, MongoDB, MySQL, and Ruby on Rails.</p>
+                <p>Automated provisioning, deployment, and health monitoring of the system using Chef and Consul on AWS.</p>
+                <p>Particpated in devising and executing a plan to horizontally scale and load balance the WebSocket-based backend.</p>
+                <p>Wrote a C++ library for faster processing of graphics primitives.</p>
+                <p></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>July 2013 &mdash; October 2013</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>Web Application Engineer</strong> at <strong><a href="https://en.wikipedia.org/wiki/Zombie_Studios" target="_blank">Zombie Studios</a></strong></p>
+
+                <p>Sole developer building an application to manage and display analytics for an in-game marketplace using Ruby on Rails, JavaScript, NuoDB, and D3.js.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>August 2012 &mdash; May 2013</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>Production Technician</strong> at <strong><a href="https://www.theochocolate.com/" target="_blank">Theo Chocolate</a></strong> </p>
+
+                <p>Made chocolate and built a Python web app to help reduce errors in production tracking and simplify the tracking process.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>September 2011 &mdash; August 2012</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>English Teacher</strong> at <strong><a href="https://www.summitschool.education/" target="_blank">Summit Foreign Language School</a></strong> </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>September 2010 &mdash; August 2011</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>English Teacher</strong> at <strong><a href="http://www.brs.edu.cn/" target="_blank">Beijing Royal School</a></strong> </p>
+
+                <p>Taught classrooms of up to thirty high school students. Represented the English department at a conference on educational technology. Helped design and coordinate a curriculum used by five other teachers.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>September 2006 &mdash; June 2007</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>Research Assistant</strong> at <strong><a href="http://cimu.apl.washington.edu/" target="_blank">Center for Medical and Industrial Ultrasound, UW Applied Physics Lab</a></strong> </p>
+
+                <p>Tested a hypothesis concerning the cause of cavitation occuring in shockwave lithotripsy. Awarded a scholarship by the Mary Gates Foundation for original research. Self-taught lab skills including programming in MATLAB, LabVIEW, and function generators, and statistical skills to determine the significance of experiment results.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                Volunteering
+                <p>March 2020 &mdash; Present</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p style="margin-top:2.4em;"><strong>Tech lead</strong> at <strong><a href="https://masksfordocs.com/" target="_blank">Masks For Docs</a></strong> </p>
+
+                <p> Masks For Docs is a non-profit dedicated to getting personal protective equipment to front-line workers. It has over 100 chapters worldwide. I volunteer coordinating a tech team to help scale the organization's logistical operations. I also make individual contributions as I have time. </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>July 2014 &mdash; Present</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p><strong>Tutor</strong> at <strong><a href="https://adadevelopersacademy.org/" target="_blank">Ada Developers Academy</a></strong> </p>
+
+                <p> Ada is a year-long training program for women and gender diverse people who want to become software developers. I volunteer as a tutor, mentor, and teaching assistant. </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>June 2014 &mdash; March 2015</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p> <strong>Developer</strong> at <strong><a href="http://www.re-sources.org/" target="_blank">Re-Sources for Sustainable Communities</a></strong> </p>
+
+                <p> In partnership with Re-Sources' director of campaigns I built a crowd-sourced document review platform to enable Re-Sources to leverage its volunteer network and review thousands of environmental impact statement scoping comments for expertise and quality to find experts able to aid a legal case against the construction of a coal export terminal in Northwest Washington. </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content work-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>January 2013 &mdash; July 2014</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p><strong>Translator</strong> at <strong><a href="http://watchingamerica.com/WA/" target="_blank">Watching America</a></strong> </p>
+
+                <p> Volunteered translating editorial articles about the United States from Mandarin Chinese to English to help broaden the breadth of perspective in our pubic discourse. Several of my translations were selected as featured articles and I was commended by the publisher for delivering work of a reliably good standard. </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                Education &amp; Awards
+                <p>July 2017</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p class="heading" style="margin-top:2.4em;"><a href="http://www.wildmedcenter.com/" target="_blank">Wilderness Medicine Training Center</a></p>
+                <p class="highlight"> <i>Wilderness First Responder</i> </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>October 2010 &mdash; June 2011</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p class="heading"><a href="http://worldwide.harvard.edu/links/wide-world" target="_blank">WIDE World at the Harvard Graduate School of Education</a></p>
+                <p class="highlight"> <i>Teaching for Understanding 1 Certificate</i> </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content education-content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>September 2006 &mdash; June 2010</p>
+              </div>
+
+              <div class="content-text work-listing education-listing">
+                <p class="heading">University of Washington</p>
+                <p class="highlight"> <i>B.A. Comparative History of Ideas</i> </p>
+                <p> Comparative History of Ideas is an interdisciplinary program that draws on a wide variety of disciplines within the College of Arts and Sciences to examine the interplay of ideas and their cultural, historical, and political contexts. The program seeks to inculcate a sense of the importance of a disciplined and interdisciplinary methodology as a means to investigate various issues, while at the same time revealing the inherent weaknesses and limitations of any system. </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p>October 2006</p>
+              </div>
+              <div class="content-text work-listing">
+                <strong><p>Mary Gates Scholar, Mary Gates Endowment for Students</p></strong>
+                <p>Awarded for research on shockwave lithotripsy at the Center for Medical and Industrial Ultrasound.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat big-text">
+                <p style="margin-top:0.25em;">May 2006</p>
+              </div>
+              <div class="content-text work-listing">
+                <strong><p class="heading">Eagle Scout Award, Boy Scouts of America</p></strong>
+                <p>Awarded for community service, knot tying.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Interests
+              </div>
+
+              <div class="content-text skills-listing">
+                <p> <span class="name"> <strong> Digital sound </strong> </span> synthesis and processing in <a href="https://github.com/bion/ko" target="_blank">Clojure</a> and <a href="https://github.com/bion/frankendank" target="_blank">SuperCollider</a> </p>
+
+                <p> <span class="name"> <strong> Outdoor activities </strong> </span> such as climbing, backpacking, and alpinism </p>
+                <p> <span class="name"> <strong> Language </strong> </span> learning and <a href="https://github.com/bion/translations" target="_blank">translating</a> </p>
+                <p> <span class="name"> <strong> Contributing </strong> </span> to efforts related to sustainability, environmental stewardship, and tech inclusivity </p>
+                <p> <span class="name"> <strong> Cooking </strong> and eating </span> </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
